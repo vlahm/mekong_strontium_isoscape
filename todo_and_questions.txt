@@ -1,0 +1,12 @@
+how to associate erosion/no erosion sr data with prediction points (right now theyre only associated with edges, so cant be used for modeling)
+    with watershed attributes tool
+    first gotta get rcaAreaKm2 and h2oAreaKm2 associated with edges
+    then use these in watershed attributes tool to create a new field in sites feature classes called h2oAreaKm2
+    then create srEro_prod (sr_ero * rcaAreaKm2), accumulate it to make srEro_acc, then do srEro_wtd = srEro_acc / h2oAreaKm2
+    then you can put srEro_acc and srEro_prod in the watershed attributes tool just like you did with rcaAreaKm2 and h2oAreaKm2
+    then srEro_acc will be associated with sites and preds, so within the sites and preds attribute tables you can do acc/h2oAreaKm2
+    then do it all again for NoEro
+
+project to gcs so plots will have lat long
+
+fix plot legend

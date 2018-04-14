@@ -1,0 +1,19 @@
+two models. one for conc, one for iso. the conc one requires slope and temp, because those affect conc. try just the isotope model first. if that doesnt do well, then consider conc + slope + temp
+
+could weight by overland flow * predicted stront conc. youd first need rock type. carbonate/silicate
+
+spatial weighting by area is last resort
+look for precipitation data by region too. that would be better. do the above if im feeling swanky
+
+two clement models: erosion and no (both of these are from clement)
+these remain distinct throughout. just want to see which one performs better
+
+standard practice:
+want weighted mean isotope ratio at each prediciton and ovservation site
+get that by computing mean iso ratio of ech rca
+accumulate those downstream
+something about dividing that accumulation column by a column of accumulated upstream area
+
+slope, temp, stront conc
+strong iso (clement data)
+
